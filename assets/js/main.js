@@ -16,3 +16,17 @@ $('.banner-area').owlCarousel({
 			}
 	}
 })
+
+	// magnifiy popup 
+	$('.image-popup').magnificPopup({
+		type:'image',
+		gallery:{
+			enabled:true
+		}
+	});
+
+	// counter up
+	$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});

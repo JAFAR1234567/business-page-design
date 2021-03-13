@@ -20,9 +20,11 @@ img{
 }
 .bg {
 	background-size: cover;
-	background-position: center;
+	background-position:center center;
+  background-repeat: no-repeat;
 	transition: .3s;
 	position: relative;
+  z-index: 22;
 }
 
 .bg::after{
@@ -33,7 +35,8 @@ img{
   height: 100%;
   width: 100%;
 	background-color: #333;
-  opacity: .80;
+  opacity: .50;
+  z-index: -99;
 }
 
 ul{
@@ -103,7 +106,6 @@ ul.navbar-nav.ms-auto li a{
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 99;
   transform: translate(-50%, -50%);
 }
 .banner-content h4{
@@ -306,4 +308,197 @@ p {
   z-index: 2;
   opacity: 0.6;
 }
+/* services section css */
 
+.single-service {
+  padding:30px;
+  box-shadow: 0px 15px 14px #ededed;
+  margin-top: 20px;
+}
+.single-service i {
+  font-size: 30px;
+}
+.single-service h4 {
+	margin: 15px 0;
+	font-size: 18px;
+	font-weight: 500;
+}
+/* work process-area css */
+
+.work-area {
+  color: #fff;
+  padding: 65px 0;
+}
+.single-process {
+  margin-top: 30px;
+  padding: 12px;
+}
+.single-process h4 {
+  font-size: 22px;
+  font-weight: 500;
+  background: #e16038;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.single-process h4 span {
+  position: absolute;
+  content: "";
+  background: #cb5910;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  padding: 10px;
+  bottom: 0;
+}
+/* project showcase area css*/
+
+.single-project {
+  position: relative;
+}
+.single-project img{
+  width: 100%;
+}
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s;
+  transform: scale(0%);
+}
+.project-overlay::after {
+  position: absolute;
+  content: "";
+  background: #333;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.80
+}
+.project-content {
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: .3s;
+}
+.project-content i{
+  font-size: 22px;
+}
+.project-content i {
+  font-size: 26px;
+}
+.project-content h4 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+h4 {
+}
+.project-content h4 span {
+  display: block;
+  margin-top: 5px;
+}
+.project-content a{
+  color: #fff;
+}
+.single-project:hover .project-overlay {
+  transform: scale(1);
+}
+/* counter css */
+
+.counter-area {
+  background: #333;
+  color: #fff;
+  padding: 60px 0;
+}
+.counter-content i {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.counter-content span {
+  display: block;
+  margin-top: 12px;
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+.counter-content {
+  text-align: center;
+}
+.counter-content h4 {
+  text-transform: capitalize;
+  /*! margin-bottom: 16px; */
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* team section css */
+
+.single-team {
+  position: relative;
+overflow: hidden;
+}
+.single-team img {
+  width: 100%;
+}
+.team-overlay {
+  position: absolute;
+  background: #333;
+  width: 100%;
+  /*! height: 100%; */
+  left: 0;
+  bottom: -91px;
+  color: #fff;
+  /*! margin-bottom: -92px; */
+  transition: .3s;
+}
+.team-overlay h4 {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 4px 0;
+  /*! margin-bottom: 0; */
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.team-overlay span {
+  display: block;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 7px 0;
+}
+.single-team:hover .team-overlay {
+  bottom: 0;
+}
+
+/* video section css*/
+
+
+.video-section {
+  color: #fff;
+  background: #333;
+  padding: 80px 0;
+  text-align: center;
+}
+.video-section a {
+  color: #fff;
+}
+.video-section i {
+  font-size: 50px;
+}
+.video-section h4 {
+  font-size: 40px;
+  text-transform: uppercase;
+  /*! padding: 10px 0; */
+  margin-top: 20px;
+}
