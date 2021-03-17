@@ -1,0 +1,171 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+.feature-1::after,
+.feature-1::before,
+.feature-2::after,
+.feature-2::before{
+    display: none;
+}
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar-toggler {
+        background: #fff;
+    }
+    .banner-content h2 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .banner-content h4 {
+        font-size: 20px;
+    }
+    a.btn-box {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+    a.border-box {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+    .navbar-brand {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .navbar-toggler {
+        font-size: 16px;
+    }
+    .owl-dots {
+        display: none;
+    }
+    .single-about p {
+        margin-right: 12px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .single-about h4 {
+        text-transform: capitalize;
+        font-size: 21px;
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .feature-1::after,
+.feature-1::before,
+.feature-2::after,
+.feature-2::before{
+    display: none;
+}
+.counter-content {
+	padding-bottom: 39px;
+}
+.single-price span {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.single-price h4 {
+	font-size: 24px;
+	margin: 10px 0;
+	padding: 12px 0;
+}
+.single-price ul li {
+	margin-bottom: 11px;
+	font-size: 14px;
+	text-align: left;
+	padding: 0 10px;
+}
+.blog-meta a {
+	margin: 0px 15px;
+	font-size: 15px;
+}
+.blog-meta {
+	position: relative;
+	z-index: 22;
+	margin-top: -20px;
+	background: #fff;
+	box-shadow: 0 15px 20px #eaeaeaea;
+	margin: 0 0px;
+	margin-top: -27px;
+	padding: 2px;
+	border-radius: 5px;
+}
+.blog-content h4 {
+	font-size: 18px;
+	font-weight: 600;
+}
+.single-blog p {
+	font-size: 14px;
+	padding: 0 3px;
+}
+.brands img {
+	width: 140px;
+	padding: 0 248px;
+}
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .owl-dots {
+        display: none;
+    }
+    .banner-content h2 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .banner-content h4 {
+        font-size: 22px;
+    }
+    a.btn-box {
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+    a.border-box {
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+    .navbar-brand {
+        font-size: 24px;
+    }
+    .navbar-toggler {
+        background: #fff;
+        font-size: 16px;
+        border: none;
+    }
+    .feature-1::after,
+.feature-1::before,
+.feature-2::after,
+.feature-2::before{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
